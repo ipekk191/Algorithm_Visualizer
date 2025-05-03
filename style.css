@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+#controls {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+#visualizer {
+    width: 600px;
+    height: 400px;
+    background: rgb(255, 255, 255);
+    border: 2px solid black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.bar {
+    width: 30px;
+    background-color: rgb(151, 188, 152);
+    transition: height 0.3s ease, background 0.3s ease;
+    text-align: center;
+    color: rgb(9, 8, 8);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#stack {
+    display: flex;
+    flex-direction: column-reverse; /* Stack elements should overlay */
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#queue {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Linked List */
+#linkedList {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.node {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
+}
+
+.arrow {
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #72a5ae;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+h3 {
+    text-align: center;
+}
+
+#graphContainer {
+    width: 100%;
+    max-width: 800px;
+    min-height: 200px;
+    margin-top: 20px;
+}
+
+.vertex {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.edge {
+    margin: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+#graphInputs {
+    background-color: #e9e9e9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 250px;
+}
+
+select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}

@@ -1,0 +1,66 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Algorithm Visualizer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Algorithm Visualizer</h1>
+<div id="controls">
+<label for="algorithm">Choose Algorithm:</label>
+<select id="algorithm">
+<option value="bubbleSort">Bubble Sort</option>
+<option value="selectionSort">Selection Sort</option>
+<option value="mergeSort">Merge Sort</option>
+<option value="quickSort">Quick Sort</option>
+</select>
+<button onclick="startSort()">Start Sorting</button>
+<button onclick="resetBars()">Reset</button>
+<button onclick="addToStack()">Add to Stack</button>
+<button onclick="removeFromStack()">Remove from Stack</button>
+<button onclick="addToQueue()">Add to Queue</button>
+<button onclick="removeFromQueue()">Remove from Queue</button>
+<button onclick="addToLinkedList()">Add to Linked List</button>
+<button onclick="removeFromLinkedList()">Remove from Linked List</button>
+</div>
+<!-- Stack Visualization -->
+<div id="stackVisualizer">
+  <h3>Stack (LIFO)</h3>
+  <div id="stack"></div>
+  </div>
+  <!-- Queue Visualization -->
+  <div id="queueVisualizer">
+  <h3>Queue (FIFO)</h3>
+  <div id="queue"></div>
+  </div>
+<p id="complexity">Time Complexity: O(?)</p>
+<p id="time">Time Taken: 0 ms</p>
+
+
+<!-- Linked List Visualization -->
+<div id="linkedListVisualizer">
+<h3>Linked List</h3>
+<div id="linkedList"></div>
+</div>
+<!-- Bar Visualization -->
+<div id="visualizer"></div>
+<div>
+<button id="graphButton">Graph Visualization</button>
+<div id="graphInputs" style="display: none;">
+<div style="margin: 10px 0;">
+<label for="vertices">Vertices (V): </label>
+<input type="text" id="vertices" placeholder="V={1,2,3,4,5} or number" />
+</div>
+<div style="margin: 10px 0;">
+<label for="edges">Edges (E): </label>
+<input type="text" id="edges" placeholder="E={(1,2),(2,4),(3,1)} or number" />
+</div>
+<button id="generateGraph">Create Graph</button>
+</div>
+</div>
+<div id="graphContainer"></div>
+<script src="script.js"></script>
+</body>
+</html>
